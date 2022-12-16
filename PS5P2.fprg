@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-16 11:00:32 AM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUg5OEJKTEI7MjAyMi0xMi0xNjsxMDo1NjoyNCBBTTszMzA1"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUg5OEJKTEI7MjAyMi0xMi0xNjsxMTowMDozMiBBTTsxOzM0MDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="start" type="Real" array="False" size=""/>
+            <declare name="inc" type="Real" array="False" size=""/>
+            <declare name="end" type="Real" array="False" size=""/>
+            <declare name="count" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter start value: &quot;" newline="True"/>
+            <input variable="start"/>
+            <output expression="&quot;Enter increment value: &quot;" newline="True"/>
+            <input variable="inc"/>
+            <output expression="&quot;Enter end value: &quot;" newline="True"/>
+            <input variable="end"/>
+            <assign variable="count" expression="start"/>
+            <while expression="count&lt;=end">
+                <output expression="count" newline="True"/>
+                <assign variable="count" expression="count+inc"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

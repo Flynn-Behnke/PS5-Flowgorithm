@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-16 11:08:12 AM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUg5OEJKTEI7MjAyMi0xMi0xNjsxMTowMDozNSBBTTszMjk3"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUg5OEJKTEI7MjAyMi0xMi0xNjsxMTowODoxMiBBTTsxOzM0MDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="gate" type="String" array="False" size=""/>
+            <declare name="count" type="Real" array="False" size=""/>
+            <declare name="lname" type="String" array="False" size=""/>
+            <declare name="s1" type="Real" array="False" size=""/>
+            <declare name="s2" type="Real" array="False" size=""/>
+            <declare name="avg" type="Real" array="False" size=""/>
+            <assign variable="count" expression="0"/>
+            <output expression="&quot;Would you like to run this program? Yes or No?: &quot;" newline="True"/>
+            <input variable="gate"/>
+            <while expression="gate == &quot;Yes&quot;">
+                <output expression="&quot;Enter last name: &quot;" newline="True"/>
+                <input variable="lname"/>
+                <output expression="&quot;Enter score 1: &quot;" newline="True"/>
+                <input variable="s1"/>
+                <output expression="&quot;Enter score 2: &quot;" newline="True"/>
+                <input variable="s2"/>
+                <assign variable="avg" expression="(s1+s2)/2"/>
+                <output expression="lname &amp; &quot; exam average: &quot; &amp; avg" newline="True"/>
+                <assign variable="count" expression="count+1"/>
+                <output expression="count &amp; &quot; people have checked their score&quot;" newline="True"/>
+                <output expression="&quot;Would you like to run this program again? Yes or No?: &quot;" newline="True"/>
+                <input variable="gate"/>
+            </while>
+            <output expression="&quot;Have a good day :)&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
